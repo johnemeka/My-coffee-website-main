@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Coffee<span></span></a>
+            <ul class="menu-links">
+                <span id="close-menu-btn" class="material-symbols-outlined">Close</span>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <span id="menu-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="content">
+            <h1>Start Your Day With A Cup Of Coffee</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptates ab esse voluptatibus reiciendis magnam doloremque neque quia eos eaque!</p>
+            <button>ORDER NOW</button>    
+        </div>
+    </section> 
+
+    <script>
+        const header = document.querySelector("header");
+        const menuBtn = document.querySelector("#menu-btn");
+        const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+        menuBtn.addEventListener("click", () => {
+            header.classList.toggle("show-mobile-menu");
+        });
+
+        closeMenuBtn.addEventListener("click", () => {
+            menuBtn.click();
+        });
+    </script>
+</body>
+</html>

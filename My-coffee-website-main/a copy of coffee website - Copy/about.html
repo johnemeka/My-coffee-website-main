@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Coffee Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Coffee<span></span></a>
+            <ul class="menu-links">
+                <span id="close-menu-btn" class="material-symbols-outlined">Close</span>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <span id="menu-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about-us-section">
+        <div class="about-content">
+            <h1>About Us</h1>
+            <p>We are passionate about coffee. Our journey began with a single vision: to bring the best coffee to your daily routine. At Coffee Shop, we pride ourselves on using high-quality beans, expert roasting techniques, and providing exceptional customer service.</p>
+            <p>Our team is dedicated to sourcing only the finest coffee beans from around the world. We offer a wide range of products from espresso to cold brews, and we also have some delicious pastries to pair with your coffee.</p>
+        </div>
+        <div class="about-images">
+            <img src="my coffee shop.jpg" alt="Coffee Beans">
+            <img src="coffee coffee coffee .jpg" alt="Coffee Shop">
+        </div>
+    </section>
+
+    <script>
+        const header = document.querySelector("header");
+        const menuBtn = document.querySelector("#menu-btn");
+        const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+        menuBtn.addEventListener("click", () => {
+            header.classList.toggle("show-mobile-menu");
+        });
+
+        closeMenuBtn.addEventListener("click", () => {
+            menuBtn.click();
+        });
+    </script>
+</body>
+</html>

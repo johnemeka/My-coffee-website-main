@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Coffee Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Coffee<span></span></a>
+            <ul class="menu-links">
+                <span id="close-menu-btn" class="material-symbols-outlined">Close</span>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <span id="menu-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+    </header>
+
+    <section class="products-section">
+        <h1>Our Coffee Products</h1>
+        <div class="products">
+            <div class="product">
+                <img src="my espresso coffee .webp" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>A rich, bold coffee perfect for starting your day.</p>
+            </div>
+            <div class="product">
+                <img src="my coffee Latte.jpg" alt="Latte">
+                <h3>Latte</h3>
+                <p>Smooth and creamy, perfect for those who love milk-based coffee.</p>
+            </div>
+            <div class="product">
+                <img src="my cold brew .jpg" alt="Cold Brew">
+                <h3>Cold Brew</h3>
+                <p>Enjoy a refreshing, iced coffee brewed slowly for a smooth taste.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const header = document.querySelector("header");
+        const menuBtn = document.querySelector("#menu-btn");
+        const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+        menuBtn.addEventListener("click", () => {
+            header.classList.toggle("show-mobile-menu");
+        });
+
+        closeMenuBtn.addEventListener("click", () => {
+            menuBtn.click();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,460 @@
+/* Resetting the default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: 'Poppins', sans-serif; /* Stylish font */
+    background-color: #D4B79E; /* Light brown background */
+    color: #4E342E; /* Dark brown for text */
+    line-height: 1.6;
+    padding-top: 60px; /* For spacing the fixed header */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4E342E; /* Dark brown navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FF7043; /* Stylish coral color */
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar .menu-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menu-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+
+.navbar .menu-links li a:hover {
+    color: #FF7043; /* Coral color on hover */
+}
+
+#menu-btn, #close-menu-btn {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('coffee-hero.jpg'); /* Replace with your high-quality image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.hero-section .content {
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 800px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-section .content h1 {
+    font-size: 60px;
+    font-family: 'Merriweather', serif; /* Elegant serif font */
+    color: #fff;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+.hero-section .content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-family: 'Lora', serif; /* Stylish serif font for text */
+    line-height: 1.8;
+}
+
+.hero-section .content button {
+    padding: 15px 30px;
+    background-color: #FF7043; /* Coral color for buttons */
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.hero-section .content button:hover {
+    background-color: #FF5722;
+    transform: scale(1.05);
+}
+
+/* About Us Section */
+.about-us-section {
+    background-color: #FFEBEE; /* Light pinkish beige */
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-us-section h1 {
+    font-size: 40px;
+    font-family: 'Merriweather', serif;
+    color: #4E342E;
+    margin-bottom: 40px;
+}
+
+.about-us-section p {
+    font-size: 18px;
+    font-family: 'Lora', serif;
+    color: #4E342E;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+}
+
+.about-us-section .about-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-us-section .about-images img {
+    border-radius: 15px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.about-us-section .about-images img:hover {
+    transform: scale(1.1);
+}
+
+/* Products Section */
+.products-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #D4B79E; /* Light brown background */
+}
+
+.products-section h1 {
+    font-size: 40px;
+    font-family: 'Merriweather', serif;
+    color: #4E342E;
+    margin-bottom: 40px;
+}
+
+.products .product {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #FFEBEE; /* Light beige */
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.products .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.products .product h3 {
+    font-size: 24px;
+    color: #FF7043;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.products .product p {
+    color: #4E342E;
+    font-size: 16px;
+}
+
+.products .product:hover {
+    transform: translateY(-10px);
+}
+
+.products .product:hover img {
+    transform: scale(1.05);
+}
+
+/* Contact Page Styles */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #D4B79E; /* Light brown background */
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 40px;
+    font-family: 'Merriweather', serif;
+    color: #4E342E;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: #4E342E;
+    margin-bottom: 40px;
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    color: #4E342E;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.contact-form button {
+    padding: 15px 30px;
+    background-color: #FF7043; /* Coral color for buttons */
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #FF5722;
+    transform: scale(1.05);
+}
+
+.contact-info {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: #4E342E;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Responsive Styles */
+
+/* For tablets and smaller screens */
+@media screen and (max-width: 768px) {
+    .contact-section h1 {
+        font-size: 32px;
+    }
+
+    .contact-section p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .contact-form {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .contact-form label {
+        font-size: 0.9rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .contact-form button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+
+    .contact-info {
+        font-size: 1rem;
+    }
+
+    .contact-info h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* For mobile screens (less than 480px width) */
+@media screen and (max-width: 480px) {
+    .contact-section h1 {
+        font-size: 28px;
+    }
+
+    .contact-section p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .contact-form label {
+        font-size: 0.85rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+
+    .contact-form button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .contact-info {
+        font-size: 0.9rem;
+    }
+
+    .contact-info h3 {
+        font-size: 1.1rem;
+    }
+}
+ 
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 60px 20px;
+    background-color: #FFEBEE;
+    text-align: center;
+}
+
+.testimonials-section h1 {
+    font-size: 40px;
+    font-family: 'Merriweather', serif;
+    color: #4E342E;
+    margin-bottom: 40px;
+}
+
+.testimonials .testimonial {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    background-color: #FF7043;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Lora', serif;
+    color: #fff;
+}
+
+.testimonials .testimonial p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.testimonials .testimonial strong {
+    color: #FFEBEE;
+    font-size: 20px;
+}
+
+/* Mobile Menu */
+.show-mobile-menu .menu-links {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #4E342E;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .menu-links {
+        display: none;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    .show-mobile-menu #close-menu-btn {
+        display: block;
+    }
+
+    .hero-section .content h1 {
+        font-size: 40px;
+    }
+
+    .hero-section .content p {
+        font-size: 18px;
+    }
+
+    .about-us-section p {
+        font-size: 16px;
+    }
+
+    .products .product {
+        width: 90%;
+    }
+
+    .about-us-section .about-images img {
+        width: 100%;
+        height: auto;
+    }
+}
